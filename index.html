@@ -3,6 +3,18 @@ layout: default
 title: Cowork
 ---
 
+<h1>Cowork Locations</h1>
+
+<div>
+{% for cowork in site.data.dallas_tx %}
+  <div class="cowork">
+    <a href="{{ cowork.website }}">
+      {{ cowork.name }}
+    </a>
+  </div>
+{% endfor %}
+</div>
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel leo erat. Nulla commodo turpis quis sagittis malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum laoreet felis, id feugiat neque tincidunt et. Suspendisse potenti. Pellentesque id nisi dui. Nullam nec euismod libero, vitae semper enim. Aenean euismod dignissim elit, id rhoncus felis gravida vitae. Vivamus sollicitudin ligula vel augue venenatis tincidunt. Phasellus accumsan metus in ullamcorper luctus. Nulla lacus augue, mollis id tristique convallis, vehicula at purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut fermentum posuere euismod. Proin elit lacus, tristique a purus ac, ultricies malesuada sem.
 </p>

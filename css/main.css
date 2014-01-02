@@ -3,8 +3,13 @@ body {
   margin-right: auto;
   max-width: 600px;
   width: 100%;
+  font-family: sans-serif;
 }
 
-#site {
-  margin: 150px;
+.site {
+  margin: 15px;
+}
+
+.cowork {
+  margin-bottom: 5px;
 }
