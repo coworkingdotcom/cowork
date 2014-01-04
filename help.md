@@ -81,4 +81,8 @@ You'll be taken to a page to review the changes you've made.  If you are happy w
 
 <img src="submitpullrequest.png" />
 
+Enter a short explanation of the changes you've made, and click the "Send pull request" button.
+
+<img src="submitpullrequest2.png" />
+
 You're done! The owner of the Master Cowork Website will review the changes and either accept or reject the pull request. If your pull request is accepted, the changes will show up on the main site.
