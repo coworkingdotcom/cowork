@@ -5,15 +5,47 @@ title: Cowork
 
 <h1>Cowork Locations</h1>
 
-<div>
-{% for city in site.data._cities %}
-  <h2>{{ city.city }}, {{ city.state }}</h2>
-  {% for cowork in site.data[city.filename] %}
+<div id="insert-here"></div>
+
+<script type="underscore/template" id="cowork-template">
+  <h2><%= city.city %>,<%= city.state %></h2>
+  <% _.each(coworks, function(work) {  %>
     <div class="cowork">
-      <a href="{{ cowork.website }}">
-        {{ cowork.name }}
-      </a>
+      <a href="<%= work.website %>"><%= work.name %></a>
     </div>
-  {% endfor %}
-{% endfor %}
-</div>
+  <% }); %>
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+  function shuffle(array) {
+    var currentIndex = array.length
+      , temporaryValue
+      , randomIndex
+      ;
+
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+  var data = {{ site.data | jsonify }};
+
+  $(function() {
+    var sortedCities = _.sortBy(data._cities, function(city) { return city.state + ", " + city.city; });
+    _.each(sortedCities, function(city) {
+      var randomizedCoworks = shuffle(data[city.filename]);
+      var tmp = _.template($("#cowork-template").html(), { city: city, coworks: randomizedCoworks, _: _ });
+      $("#insert-here").append(tmp);
+    });
+  });
+</script>
