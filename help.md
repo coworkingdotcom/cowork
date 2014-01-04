@@ -31,7 +31,7 @@ The files in this directory represent all cowork locations in each city. If your
 
 <img src="addfile.png" />
 
-Enter a file name in the form of CITY\_STATEABBR.yml. Fill out the file, and the press the "Commit New File" button. _The order of the cowork locations do not matter. When they are displayed on the website, they will be randomized_.
+Enter a file name in the form of CITY\_STATEABBR.yml. Fill out the file, and press the "Commit New File" button. _The order of the cowork locations do not matter. When they are displayed on the website, they will be randomized_.
 
 <img src="adddata.png" />
 
