@@ -24,7 +24,8 @@ The idea is simple: independent professionals and those with workplace flexibili
   <h3><%= city.city %>, <%= city.state %></h3>
   <% _.each(coworks, function(work) {  %>
     <div class="cowork">
-      <a href="<%= work.website %>"><%= work.name %></a>
+      <a href="<%= work.website %>"><%= work.name %></a><br/>
+      <%= work.address %>
     </div>
   <% }); %>
 </script>
@@ -67,3 +68,7 @@ The idea is simple: independent professionals and those with workplace flexibili
     });
   });
 </script>
+
+<!--
+http://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:red%7Clabel:S%7C15400%20Knoll%20Trail%20Dr,%20Dallas,%20TX&sensor=false&key=AIzaSyCv8ef9A2WIJAlioPrahGdsO1sw-m0EgR0
+-->
