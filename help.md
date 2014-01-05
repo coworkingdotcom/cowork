@@ -8,6 +8,7 @@ title: Cowork
 </style>
 
 #Instructions for Contributors
+<hr/>
 
 ##Registering on GitHub and "Forking the Repository"
 

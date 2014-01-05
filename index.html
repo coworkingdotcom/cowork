@@ -3,12 +3,25 @@ layout: default
 title: Cowork
 ---
 
-<h1>Cowork Locations</h1>
+<h1>What is Coworking?</h1>
+<hr/>
+
+<p>
+The idea is simple: independent professionals and those with workplace flexibility work better together than they do alone. Coworking spaces are about community-building and sustainability. Participants agree to uphold the values set forth by the movement’s founders, as well as interact and share with one another. We are about creating better places to work and as a result, a better way to work. 
+</p>
+
+<h1>Locations</h1>
+<hr/>
 
 <div id="insert-here"></div>
 
+<hr />
+<footer>
+  Is your cowork location not listed? No problem, <a href="/help.html">here are the instructions to add one.</a>
+</footer>
+
 <script type="underscore/template" id="cowork-template">
-  <h2><%= city.city %>,<%= city.state %></h2>
+  <h3><%= city.city %>, <%= city.state %></h3>
   <% _.each(coworks, function(work) {  %>
     <div class="cowork">
       <a href="<%= work.website %>"><%= work.name %></a>
@@ -35,9 +48,17 @@ title: Cowork
     return array;
   }
 
+  function position(pos) {
+    console.log(pos);
+  }
+
   var data = {{ site.data | jsonify }};
 
   $(function() {
+    if(navigator.geolocation) {
+      console.log(navigator.geolocation.getCurrentPosition(position));
+    }
+
     var sortedCities = _.sortBy(data._cities, function(city) { return city.state + ", " + city.city; });
     _.each(sortedCities, function(city) {
       var randomizedCoworks = shuffle(data[city.filename]);
