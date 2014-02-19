@@ -1,7 +1,21 @@
-- name: FortWork
-  website: http://www.dallasfortwork.com/
-  address: "15400 Knoll Trail Dr #204, Dallas, TX"
+- name: Fort Work
+  website: http://fortwork.com/
+  address: "15400 Knoll Trail Dr #204, Dallas, TX 75248"
 
 - name: Common Desk
   website: http://thecommondesk.com/
-  address: "2919 Commerce St, Dallas, TX"
+  address: "2919 Commerce St, Dallas, TX 75226"
+
+- name: Weld
+  website: http://weld.co/
+  address: "2410 Farrington St, Dallas, TX 75207"
+  
+- name: The Grove
+  website: http://grovedallas.com/
+  address: "501 Elm St #450 Dallas, TX 75202"
+  
+- name: Dallas Entrepreneur Center (The DEC)
+  website: http://thedec.co/
+  address: "1333 North Stemmons Freeway #110, Dallas, TX 75207"
+  
+  
