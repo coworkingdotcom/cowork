@@ -1,6 +1,10 @@
 - filename: dallas_tx
   city: Dallas
   state: TX
+  coordinator_git: oren00
+  coordinator_name: Oren Salomon
+  coordinator_email: oren@dallasfortwork.com
+  coordinator_image: http://scontent-a-dfw.xx.fbcdn.net/hphotos-ash3/t1/1451575_10102671024252793_1245006322_n.jpg
 
 - filename: austin_tx
   city: Austin
