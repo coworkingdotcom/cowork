@@ -21,7 +21,11 @@ The idea is simple: independent professionals and those with workplace flexibili
 </footer>
 
 <script type="underscore/template" id="cowork-template">
-  <h3><%= city.city %>, <%= city.state %></h3>
+  <% if(city.state) { %>
+    <h3><%= city.city %>, <%= city.state %></h3>
+  <% } else { %>
+    <h3><%= city.city %>, <%= city.country %></h3>
+  <% } %>
   The coworker managing this list for <%= city.city %> is <a href="http://github.com/<%= city.coordinator_git %>"><%= city.coordinator_name %></a> and you can <a href="mailto:<%= city.coordinator_email %>">e-mail them here</a><br /><br />
   <% _.each(coworks, function(work) {  %>
     <div class="cowork">

@@ -1,4 +1,5 @@
 - filename: dallas_tx
+  country: USA
   city: Dallas
   state: TX
   coordinator_git: oren00
@@ -7,9 +8,15 @@
   coordinator_image: http://scontent-a-dfw.xx.fbcdn.net/hphotos-ash3/t1/1451575_10102671024252793_1245006322_n.jpg
 
 - filename: austin_tx
+  country: USA
   city: Austin
   state: TX
 
 - filename: houston_tx
+  country: USA
   city: Houston
   state: TX
+
+- filename: paris_france
+  country: France
+  city: Paris
