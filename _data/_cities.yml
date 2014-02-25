@@ -1,6 +1,7 @@
 - filename: dallas_tx
   city: Dallas
   state: TX
+  coordinator: oren00
 
 - filename: austin_tx
   city: Austin
