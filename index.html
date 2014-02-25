@@ -22,7 +22,7 @@ The idea is simple: independent professionals and those with workplace flexibili
 
 <script type="underscore/template" id="cowork-template">
   <h3><%= city.city %>, <%= city.state %></h3>
-  The coworker managing this list for <%= city.city %> is <a href="github.com<%= city.coordinator_git %>"><%= city.coordinator_name %></a> and you can <a href="mailto:<%= city.coordinator_email %>e-mail them here</a>
+  The coworker managing this list for <%= city.city %> is <a href="github.com/<%= city.coordinator_git %>"><%= city.coordinator_name %></a> and you can <a href="mailto:<%= city.coordinator_email %>e-mail them here</a>
   <% _.each(coworks, function(work) {  %>
     <div class="cowork">
       <a href="<%= work.website %>"><%= work.name %></a><br/>
