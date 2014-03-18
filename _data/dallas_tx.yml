@@ -19,6 +19,8 @@
 - name: The Grove
   website: http://grovedallas.com/
   address: "501 Elm St #450 Dallas, TX 75202"
+  lat: 32.7798327
+  long: -96.8078397
   
 - name: Dallas Entrepreneur Center (The DEC)
   website: http://thedec.co/
