@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+  </head>
+  <body>
+    <input id="address" type="text" name="" placeholder="address" style="width: 400px">
+    <input id="getlatlong" type="submit" value="get lat, long">
+    <pre id="output">
+    </pre>
+    <script>
+      $(function() {
+        $("#getlatlong").click(function() {
+          var address = encodeURIComponent($("#address").val());
+          $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&sensor=false&api_key=AIzaSyCv8ef9A2WIJAlioPrahGdsO1sw-m0EgR0", function(data) {
+            if(data.results.length) {
+              var lat = data.results[0].geometry.location.lat;
+              var lng = data.results[0].geometry.location.lng;
+              var formattedAddress = data.results[0].formatted_address;
+              $("#output").html(formattedAddress + "<br/>lat: " + lat + "<br/>long: " + lng);
+            } else {
+              $("#output").html("no results for: " + $("#address").val());
+            }
+          });
+          //https://maps.googleapis.com/maps/api/geocode/json?address=6423%20Escena%20Blvd,%20Irving,%20TX&sensor=false&api_key=AIzaSyCv8ef9A2WIJAlioPrahGdsO1sw-m0EgR0
+        });
+      });
+    </script>
+  </body>
+</html>

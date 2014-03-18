@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head> 
+<body>
+  <div id="map" style="width: 500px; height: 400px;"></div>
+  <script type="text/javascript">
+    var locations = [
+      ['Fort Work', 32.9634633,  -96.8179091],
+      ['Common Desk', 32.783816, -96.781318],
+      ['Weld', 32.7997387, -96.8386766]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var LatLngList = [];
+
+    for (i = 0; i < locations.length; i++) {  
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      LatLngList.push(marker.position);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0] + "<br/><a target="_blank" href='https://www.google.com/maps/place/6423+Escena+Blvd'>Some Address</a>");
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    var bounds = new google.maps.LatLngBounds ();
+    for (var i = 0, LtLgLen = LatLngList.length; i < LtLgLen; i++) {
+      bounds.extend (LatLngList[i]);
+    }
+    map.fitBounds(bounds);
+  </script>
+</body>
+</html>
