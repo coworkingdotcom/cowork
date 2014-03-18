@@ -25,3 +25,5 @@
 - name: Dallas Entrepreneur Center (The DEC)
   website: http://thedec.co/
   address: "1333 North Stemmons Freeway #110, Dallas, TX 75207"
+  lat: 32.7798327
+  long: -96.8078397
