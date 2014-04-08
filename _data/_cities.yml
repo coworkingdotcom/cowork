@@ -7,16 +7,17 @@
   coordinator_email: oren@dallasfortwork.com
   coordinator_image: http://scontent-a-dfw.xx.fbcdn.net/hphotos-ash3/t1/1451575_10102671024252793_1245006322_n.jpg
 
-- filename: austin_tx
+- filename: denver_co
   country: USA
-  city: Austin
-  state: TX
+  city: Denver
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
 
-- filename: houston_tx
+- filename: boulder_co
   country: USA
-  city: Houston
-  state: TX
-
-- filename: paris_france
-  country: France
-  city: Paris
+  city: Boulder
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
+  
