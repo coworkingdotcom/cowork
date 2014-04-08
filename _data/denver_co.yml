@@ -1,29 +1,29 @@
-- name: Dallas Fort Work
-  website: http://fortwork.com/
-  address: "15400 Knoll Trail Drive #204, Dallas, TX 75248"
-  lat: 32.9634633
-  long: -96.8179091
+- name: Thrive
+  website: http://www.businessatthrive.com/
+  address: "1830 Blake Street, Denver, CO 80202"
+  lat: 39.752612
+  long: -104.996002
 
-- name: Common Desk
-  website: http://thecommondesk.com/
-  address: "2919 Commerce St, Dallas, TX 75226"
-  lat: 32.783816
-  long: -96.781318
+- name: Converge
+  website: http://convergedenver.com/
+  address: "3327 Brighton Blvd. 80216 Denver, CO"
+  lat: 39.768936
+  long: -104.981058
 
-- name: Weld
-  website: http://weld.co/
-  address: "2410 Farrington St, Dallas, TX 75207"
-  lat: 32.7997387
-  long: -96.8386766
+- name: Shift Workspaces
+  website: http://shiftworkspaces.com/
+  address: "383 Corona Street, Denver, CO 80218"
+  lat: 39.721815
+  long: -104.974320
   
-- name: The Grove
-  website: http://grovedallas.com/
-  address: "501 Elm St #450 Dallas, TX 75202"
-  lat: 32.7798327
-  long: -96.8078397
+- name: Green Spaces
+  website: http://greenspacescolorado.com/
+  address: "1368 26th Street Denver, CO 80205"
+  lat: 39.759113
+  long: -104.986091
   
-- name: Dallas Entrepreneur Center (The DEC)
-  website: http://thedec.co/
-  address: "1333 North Stemmons Freeway #110, Dallas, TX 75207"
-  lat: 32.7798327
-  long: -96.8078397
+- name: Creative Density
+  website: http://densitycoworking.com/
+  address: "1719 Emerson St. Denver, CO 80218"
+  lat: 39.743711
+  long: -104.976421
