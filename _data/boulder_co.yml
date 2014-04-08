@@ -1,29 +1,18 @@
-- name: Dallas Fort Work
-  website: http://fortwork.com/
-  address: "15400 Knoll Trail Drive #204, Dallas, TX 75248"
-  lat: 32.9634633
-  long: -96.8179091
+- name: Scrib
+  website: http://scrib.co/
+  address: "Colorado 7, Boulder, CO 80302"
+  lat: 40.080575
+  long: -105.282152
 
-- name: Common Desk
-  website: http://thecommondesk.com/
-  address: "2919 Commerce St, Dallas, TX 75226"
-  lat: 32.783816
-  long: -96.781318
+- name: Fuse Coworking
+  website: http://www.boulderfuse.com/
+  address: "1724 Broadway St Boulder, CO 80302"
+  lat: 40.014491
+  long: -105.278526
 
-- name: Weld
-  website: http://weld.co/
-  address: "2410 Farrington St, Dallas, TX 75207"
-  lat: 32.7997387
-  long: -96.8386766
+- name: Boulder Digital Arts
+  website: http://boulderdigitalarts.com/
+  address: "1600 Range Street, Boulder, CO 80301"
+  lat: 40.015123
+  long: -105.229601
   
-- name: The Grove
-  website: http://grovedallas.com/
-  address: "501 Elm St #450 Dallas, TX 75202"
-  lat: 32.7798327
-  long: -96.8078397
-  
-- name: Dallas Entrepreneur Center (The DEC)
-  website: http://thedec.co/
-  address: "1333 North Stemmons Freeway #110, Dallas, TX 75207"
-  lat: 32.7798327
-  long: -96.8078397
