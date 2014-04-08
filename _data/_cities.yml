@@ -27,3 +27,31 @@
   state: CO
   coordinator_name: Craig Baute
   coordinator_email: craig@densitycoworking.com
+
+- filename: fortcollins_co
+  country: USA
+  city: Fort Collins
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
+  
+- filename: loveland_co
+  country: USA
+  city: Loveland
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
+  
+- filename: parker_co
+  country: USA
+  city: Parker
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
+  
+- filename: vail_co
+  country: USA
+  city: Vail
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
