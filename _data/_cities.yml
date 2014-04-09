@@ -13,6 +13,13 @@
   state: CO
   coordinator_name: Craig Baute
   coordinator_email: craig@densitycoworking.com
+  
+- filename: coloradosprings_co
+  country: USA
+  city: Colorado Springs
+  state: CO
+  coordinator_name: Craig Baute
+  coordinator_email: craig@densitycoworking.com
 
 - filename: boulder_co
   country: USA
