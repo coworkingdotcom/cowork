@@ -3,3 +3,10 @@
   address: "2121 Academy Cir #104, Colorado Springs, CO 80909"
   lat: 38.862606
   long: -104.755556
+  
+- name: Epicentral Coworking 
+  website: http://www.epicentral.org/
+  address: "409 N Tejon St, Colorado Springs, CO 80903"
+  lat: 38.840011
+  long: -104.822857
+  
